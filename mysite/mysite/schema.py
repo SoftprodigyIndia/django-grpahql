@@ -1,6 +1,5 @@
 import graphene
 import secret.schema
-import graphql_jwt
 
 
 class Query(secret.schema.Query, graphene.ObjectType):
