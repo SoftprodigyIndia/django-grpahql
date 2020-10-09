@@ -4,8 +4,8 @@ Create table: done using **create\_table .**
 
 Ex
 
-Step 1. Make.py file
-Step 2. Import boto
+Step-1. Make.py file
+Step-2. Import boto
 
 Step-3. you must provide : table name, primary key(key schema,attribute definitions, throughput provision(ReadCapacityUnits,WriteCapacityUnits)
 
