@@ -4,23 +4,23 @@ Create table: done using **create\_table .**
 
 Ex
 
-Step1. Make.py file
- Step 2. Import boto
+Step 1. Make.py file
+Step 2. Import boto
 
-Step3 you must provide : table name, primary key(key schema,attribute definitions, throughput provision(ReadCapacityUnits,WriteCapacityUnits)
+Step-3. you must provide : table name, primary key(key schema,attribute definitions, throughput provision(ReadCapacityUnits,WriteCapacityUnits)
 
-Step 4- run file by : python filename.py
+Step-4. run file by : python filename.py
 
 Load Sample Data(just like seeder in python django or adding data to table through external json file): done using **put\_item**
 
 **Ex**
 
-Step1. py file
- Step 2. Import boto
+Step-1. py file
+Step-2. Import boto
 
-Step3 you must use put\_item to add data in a specific table
+Step-3. you must use put\_item to add data in a specific table
 
-Step 4- run file by : python filename.py
+Step-4. run file by : python filename.py
 
 Create/Insert Item : done using **put\_item**
 
@@ -33,24 +33,19 @@ Item={
 &#39;year&#39;: year,
 
 &#39;title&#39;: title,
-
 }
-
 )
 
 Read Item : done using **get\_item (just like a get() in django orm)**
 
 In this we need to specify a key to filter
- Ex:
+Ex:
 
 table = dynamodb.Table(&#39;Movies&#39;)
-
 try:
 
 response = table.get\_item(Key={&#39;year&#39;: year, &#39;title&#39;: title})
-
 except ClientError as e:
-
 print(e.response[&#39;Error&#39;][&#39;Message&#39;])
 
 else:
