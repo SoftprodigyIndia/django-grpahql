@@ -1,12 +1,8 @@
 ::: {title="header"}
-\
 :::
 
 **Dynamo db using python**
 
-\
-
-\
 
 [Create table: done using]{.underline} [**create\_table .**]{.underline}
 
@@ -20,9 +16,6 @@ definitions, throughput provision(ReadCapacityUnits,WriteCapacityUnits)
 
 Step 4- run file by : python filename.py
 
-\
-
-\
 
 [Load Sample Data(just like seeder in python django or adding data to
 table through external json file): done using]{.underline}
@@ -36,8 +29,6 @@ Step 2. Import boto
 Step3 you must use put\_item to add data in a specific table
 
 Step 4- run file by : python filename.py
-
-\
 
 [Create/Insert Item : done using]{.underline}
 [**put\_item**]{.underline}
